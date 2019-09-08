@@ -9,11 +9,12 @@ export default {
             loaded: false,
             postTitle: '',
             postBody: '',
-            isPublished: 0,
+            isPublished: 1,
             create: false,
         }
     },
     computed: {
+        ...mapState('account', ['formResponse']),
         ...mapGetters({
             posts: PostGetterTypes.GET_POSTS,
             isLoaded: PostGetterTypes.IS_LOADED,
@@ -21,16 +22,20 @@ export default {
     },
     methods: {
         ...mapActions({
-            fetchPosts: PostActionTypes.FETCH_POSTS
+            fetchPosts: PostActionTypes.FETCH_POSTS,
+            addPost: PostActionTypes.ADD_POST
         }),
         ...mapActions('account', ['createPost']),
         removeRow: function (index) {
             this.posts.data.splice(index, 1);
         },
         postCreate() {
+            const vm = this;
             const {postTitle, postBody, isPublished} = this;
-            this.createPost({postTitle, postBody, isPublished}).then(response => {
-                //this.posts.data.push({title:postTitle})
+            this.createPost({postTitle, postBody, isPublished}).then(() => {
+                //let newPost = vm.$store.state.account.api.data;
+                //TODO: add row
+                this.fetchPosts();
                 this.create = false;
             });
         }

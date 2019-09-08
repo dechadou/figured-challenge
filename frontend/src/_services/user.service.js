@@ -42,7 +42,7 @@ function login(email, password) {
         });
 }
 
-function createPost(postTitle, postBody, isPublished) {
+async function createPost(postTitle, postBody, isPublished) {
     const requestOptions = {
         method: 'POST',
         headers: {Authorization: 'Bearer ' + localStorage.getItem('accessToken'), 'Content-Type': 'application/json'},

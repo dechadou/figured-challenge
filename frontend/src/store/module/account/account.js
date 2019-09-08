@@ -105,7 +105,7 @@ const mutations = {
         state.user = null;
     },
     formResponse(state, payload) {
-        state.api = payload
+        state.api.data = payload
     }
 };
 

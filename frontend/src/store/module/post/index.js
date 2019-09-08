@@ -1,4 +1,4 @@
-import post, {FETCH_POSTS, GET_POSTS, IS_LOADED} from './post';
+import post, {ADD_POST, FETCH_POSTS, GET_POSTS, IS_LOADED} from './post';
 
 export const PostNamespace = 'post';
 
@@ -11,6 +11,7 @@ export const PostMutationTypes = {};
 
 export const PostActionTypes = {
     FETCH_POSTS: `${PostNamespace}/${FETCH_POSTS}`,
+    ADD_POST: `${PostNamespace}/${ADD_POST}`,
 };
 
 export default post;
