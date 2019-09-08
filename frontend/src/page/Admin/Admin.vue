@@ -9,6 +9,9 @@
                     <router-link to="/">
                         <button class="btn btn-primary">Return Home</button>
                     </router-link>
+                    <router-link to="/logout">
+                        <button class="btn btn-primary">Logout</button>
+                    </router-link>
                 </div>
             </div>
         </div>

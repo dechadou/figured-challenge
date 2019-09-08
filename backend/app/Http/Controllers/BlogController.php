@@ -16,7 +16,7 @@ class BlogController extends Controller
         $posts = Post::with('tags', 'category', 'user')
             ->published()
             ->simplePaginate(5);
-        return view('frontend.index', compact('posts'));
+        #return view('frontend.index', compact('posts'));
     }
 
     /**
@@ -26,6 +26,6 @@ class BlogController extends Controller
     public function post(Post $post)
     {
         $post = $post->load(['tags', 'user', 'category']);
-        return view('frontend.post', compact('post'));
+        #return view('frontend.post', compact('post'));
     }
 }

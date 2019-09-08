@@ -1,39 +1,23 @@
-@extends('layouts.app')
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
 
-@section('content')
-    <div class="container">
-        <div class="row">
+    <title>Vue Skeleton</title>
 
-            <div class="col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Posts</div>
-
-                    <div class="panel-body">
-                        <h1>{{ $posts }}</h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Tags</div>
-
-                    <div class="panel-body">
-                        <h1>{{ $tags }}</h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Categories</div>
-
-                    <div class="panel-body">
-                        <h1>{{ $categories }}</h1>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-@endsection
+    <script>
+        // enable to override webpacks publicPath
+        // var webpackPublicPath = '/';
+    </script>
+    <link href="{{ asset('/version/1567923817420/css/vendors.css') }}" rel="stylesheet">
+    <link href="{{ asset('/version/1567924280830/css/app.css') }}" rel="stylesheet">
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<script type="text/javascript" src="{{ asset('/version/1567924280830/js/vendors.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/version/1567924280830/js/app.js') }}"></script>
+</body>
+</html>

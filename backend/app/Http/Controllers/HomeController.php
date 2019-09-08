@@ -9,16 +9,6 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-
-    /**
-     * HomeController constructor.
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -27,6 +17,6 @@ class HomeController extends Controller
         $posts      = Post::count();
         $tags       = Tag::count();
         $categories = Category::count();
-        return view('home', get_defined_vars());
+        return view('home');
     }
 }
