@@ -25,11 +25,20 @@ Frontend distribution has been added to Laravel views in order to make it run sm
 - `Admin, Home and Login pages`
 - `Post Component`
 
-#### How to build
+#### How to build Backend
 - Create docker for Backend with **./start-app.sh**
 - Start backend with **./init-app.sh**
 - Run docker-compose exec app php artisan key:generate
 - Run docker-compose exec app php artisan jwt:secret
+- Run docker-compose exec app php artisan migrate
+- Run docker-compose exec app php artisan db:seed
+- Run docker-compose exec app php artisan db:seed --class=PostDataSeeder (dummy data)
 - Backend should run on localhost:8080
-- cd FrontEnd folder  and run **yarn run dev**
-- Frontend should run on localhost:8081
+- Backend comes packed with dist version of FrontEnd.
+
+#### How to build Frontend
+- cd FrontEnd folder and run **yarn run dev** tu run a local dev environment or **yarn build prod** to generate a distribution version 
+- Frontend should run on localhost:808* (port depends on current availability)
+
+
+**Time Spent on challenge: 6 hours**

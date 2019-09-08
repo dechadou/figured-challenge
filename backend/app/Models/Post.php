@@ -63,8 +63,9 @@ class Post extends Eloquent
      * @param $query
      * @return mixed
      */
-    public function scopePublished($query)
+    public function scopePublished()
     {
+        $query = parent::newQuery();
         return $query->where('is_published', true);
     }
 
