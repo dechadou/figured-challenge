@@ -11,13 +11,13 @@
         // enable to override webpacks publicPath
         // var webpackPublicPath = '/';
     </script>
-    <link href="{{ asset('/version/1567923817420/css/vendors.css') }}" rel="stylesheet">
-    <link href="{{ asset('/version/1567924280830/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/version/1567974608445/css/vendors.css') }}" rel="stylesheet">
+    <link href="{{ asset('/version/1567974608445/css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app"></div>
 <!-- built files will be auto injected -->
-<script type="text/javascript" src="{{ asset('/version/1567924280830/js/vendors.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/version/1567924280830/js/app.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/version/1567974608445/js/vendors.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/version/1567974608445/js/app.js') }}"></script>
 </body>
 </html>

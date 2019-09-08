@@ -12,6 +12,7 @@
 */
 
 
+Route::get('/', 'HomeController@index');
 Route::get('/{any}', 'HomeController@index');
 Route::get('/posts/{post}', 'BlogController@post');
 Auth::routes();
