@@ -9,7 +9,7 @@ Frontend distribution has been added to Laravel views in order to make it run sm
 
 ### Frameworks Used
 - Backend => Laravel Framework skeleton provided by Figured
-- Frontend => VueJs with Vuex and Boostrap
+- Frontend => VueJs with Vuex and Boostrap, Sg generator and Webpack
 
 #### Created code for Backend
 - `API Controllers => PostController | UserController`
